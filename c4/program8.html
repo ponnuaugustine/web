@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+body
+{
+	text-align:center;
+}
+p
+{
+	color:green;
+	font-size:40px;
+	font-weight:bold;
+	font-family:sans-serif;
+}
+</style>
+</head>
+<body>
+<h1 style="color:green;"><u>Calculate age from Date of Birth</u></h1>
+<label>enter your name : </label>
+<input type="text" id="name"><br><br>
+<label>enter date of birth: </label>
+<input type="date" id="d"><br><br><br>
+<button onClick="myFunction()">Calculate Age</button>
+<p id="p1" style="color:green;"></p>
+<p id="p2" style="color:green;"></p>
+<script>
+function myFunction()
+{
+	var x = document.getElementById("name").value;
+	document.getElementById("p1").innerHTML = x;
+	var y = document.getElementById("d").value;
+	var z =  new Date(y); 
+	var month_diff = Date.now() - z.getTime();
+    	var age_dt = new Date(month_diff);
+    	var year = age_dt.getUTCFullYear();
+    	var age = Math.abs(year - 1970);
+    	return document.getElementById("p2").innerHTML =  "Age is: " + age + " years. ";
+}
+</script>
+</body>
+</html>
+

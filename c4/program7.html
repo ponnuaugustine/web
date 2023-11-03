@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<center><button onClick="myFunction()">Set Color</button>
+<h2 style="color:red;"><u>JAVASCRIPT</u></h2>
+<p id="y">What Is JavaScript? JavaScript is a cross-platform, object-oriented programming language used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia, etc.</p></center>
+<script>
+function myFunction()
+{
+	var person = prompt("enter any color:");
+	if(person!=null)
+	{ 
+    		document.getElementById("y").style.background = person;
+    	}
+}
+</script>
+</body>
+</html>
