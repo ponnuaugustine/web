@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function myFunction()
+{
+	var x=document.getElementById("string").value;
+	document.getElementById("y").innerHTML = x;
+}
+</script>
+</head>
+<body>
+<h1 style="color:green;"><u>Display output in p tag</u></h1>
+ <label>enter any string:</label>
+ <input type="text" id="string">
+ <button onclick="myFunction()">Print</button>
+
+<p id="y"></p>
+</body>
+</html>
