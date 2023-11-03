@@ -1,0 +1,24 @@
+<html>
+<body>
+<h1 style="color:green;"><u>Check if Positive or Negative</u></h1>
+<label>enter any number : </label>
+<input type="text" id="num">
+<button onClick="myFunction()">Check</button>
+<p id="y"></p>
+<script>
+function myFunction()
+{
+	var x = document.getElementById("num").value;
+	document.getElementById("y").innerHTML = x;
+	if(x > 0)
+	{
+		document.getElementById("y").textContent = x+ " is a positive number";
+	}
+	if(x < 0)
+	{
+		document.getElementById("y").textContent = x+ " is a negative number";
+	}
+}
+</script>
+</body>
+</html>
